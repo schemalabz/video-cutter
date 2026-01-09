@@ -1,0 +1,46 @@
+{
+  "name": "video-cutter",
+  "version": "1.0.0",
+  "description": "A simple macOS app for cutting videos",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron .",
+    "setup-ffmpeg": "node setup-ffmpeg.js",
+    "build": "npm run setup-ffmpeg && electron-builder --mac",
+    "build:all": "npm run setup-ffmpeg && electron-builder --mac --win --linux"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "fluent-ffmpeg": "^2.1.2"
+  },
+  "devDependencies": {
+    "electron": "^28.0.0",
+    "electron-builder": "^24.9.1"
+  },
+  "build": {
+    "appId": "com.videocutter.app",
+    "productName": "Video Cutter",
+    "mac": {
+      "category": "public.app-category.utilities",
+      "target": "dmg"
+    },
+    "files": [
+      "main.js",
+      "renderer.js",
+      "videoProcessor.js",
+      "index.html",
+      "bin/**/*"
+    ],
+    "extraResources": [
+      {
+        "from": "bin",
+        "to": "bin",
+        "filter": [
+          "**/*"
+        ]
+      }
+    ]
+  }
+}

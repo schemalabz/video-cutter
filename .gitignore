@@ -1,0 +1,35 @@
+# Dependencies
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Build outputs
+dist/
+build/
+*.dmg
+*.app
+
+# FFmpeg binaries (will be downloaded during build)
+bin/ffmpeg
+bin/ffprobe
+bin/*.zip
+
+# OS files
+.DS_Store
+*.swp
+*.swo
+*~
+
+# IDE
+.vscode/
+.idea/
+*.sublime-*
+
+# Old React Native files (no longer needed, but keeping for reference)
+# macos/
+# src/
+# index.js
+# tsconfig.json
+# SETUP.md
+# INTEGRATION.md
