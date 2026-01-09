@@ -1,6 +1,8 @@
 # Video Cutter
 
-A simple macOS app for cutting videos into multiple segments. Vibecoded <3.
+Warning: vibecoded ai slop
+
+A simple macOS app for cutting videos into multiple segments.
 
 ## Quick Start
 
